@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<!--suppress HtmlRequiredLangAttribute -->
+<html>
+<body>
+{% for package in packages %}
+  <a href="{% url 'download_package' module.id package.file_name %}">{{ package.file_name }}</a>
+{% endfor %}
+</body>
+</html>

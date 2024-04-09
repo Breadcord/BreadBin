@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<!--suppress HtmlRequiredLangAttribute -->
+<html>
+<body>
+{% for module in modules %}
+  <a href="{% url 'simple_module' module.id %}">{{ module.id }}</a>
+{% endfor %}
+</body>
+</html>
